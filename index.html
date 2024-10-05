@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <img src="profile.png" alt="Profile Picture">
+                <h1>Oi, Felipe!</h1>
+            </div>
+        </header>
+        
+        <nav>
+            <button class="tab active" onclick="showTab('a-fazer')">A Fazer</button>
+            <button class="tab" onclick="showTab('fazendo')">Fazendo</button>
+            <button class="tab" onclick="showTab('feito')">Feito</button>
+        </nav>
+        
+        <section id="a-fazer" class="tab-content active">
+            <div class="task">
+                <input type="checkbox">
+                <div>
+                    <p class="task-name">Fazer avaliação do moodle</p>
+                    <p class="due-date">Até dia: 02/08/2024</p>
+                </div>
+            </div>
+            <div class="task">
+                <input type="checkbox">
+                <div>
+                    <p class="task-name">Limpar a casa do cachorro</p>
+                    <p class="due-date">Até dia: 10/08/2024</p>
+                </div>
+            </div>
+            <!-- Adicione mais tarefas aqui -->
+        </section>
+        
+        <section id="fazendo" class="tab-content">
+            <!-- Tarefas em progresso -->
+        </section>
+        
+        <section id="feito" class="tab-content">
+            <!-- Tarefas concluídas -->
+        </section>
+        
+        <button class="add-task">+</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
